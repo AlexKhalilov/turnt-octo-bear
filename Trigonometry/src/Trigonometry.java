@@ -12,14 +12,11 @@ public class Trigonometry
         }while((!myString.equals("1")) && (!myString.equals("2")));
         myScreen.print("Введите исследуемое число: \n");
         
-        if(myString.equals(1)){
-            myScreen.print("\nОтвет: "+ Conversion.degToRad(myScreen.input()));
+        if(myString.equals("1")){
+            myScreen.print("\nОтвет: "+ Conversion.degToRad(myScreen.input())+" радиан");
         }else{
-            myScreen.print("\nОтвет: "+ Conversion.radToDeg(myScreen.input()));
+            myScreen.print("\nОтвет: "+ Conversion.radToDeg(myScreen.input())+" градусов");
         }
-
-
-      //  myScreen.print("ok");
     }
 
 }
